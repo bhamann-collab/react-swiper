@@ -5,6 +5,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    max-width: 800px;
+    min-width: 350px;
 }
 
 .singleCard {
@@ -13,14 +15,6 @@
     background-color: #f1f2f6;
     border-radius: 10px;
     position: relative;
-
-    .imgRestaurant {
-        width: 100%;
-        height: auto;
-        height: 70%;
-        border-top-left-radius: 10px;
-        border-top-right-radius: 10px;
-    }
 
     .container {
         padding: 35px 5px 40px 10px;
