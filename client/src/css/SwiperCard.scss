@@ -5,8 +5,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: 800px;
-    min-width: 350px;
 }
 
 .singleCard {
@@ -15,6 +13,8 @@
     background-color: #f1f2f6;
     border-radius: 10px;
     position: relative;
+    max-width: 600px;
+    min-width: 250px;
 
     .container {
         padding: 35px 5px 40px 10px;
