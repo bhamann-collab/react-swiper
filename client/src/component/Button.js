@@ -1,14 +1,30 @@
-import React from 'react'
+import React, {useState} from 'react'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { library } from "@fortawesome/fontawesome-svg-core";
-import { faHome } from "@fortawesome/free-solid-svg-icons";
+import * as Icons from "@fortawesome/free-solid-svg-icons";
 
-library.add(faHome)
+//Needed to import font awesome
+const iconList = Object
 
-const Button = () => {
+  .keys(Icons)
+  .filter(key => key !== "fas" && key !== "prefix" )
+  .map(icon => Icons[icon])
+
+  library.add(...iconList)
+//Needed to import font awesome
+
+const Button = props => {
+    //Currently uses props the color of the icon and the type of icon
+    //propValue.iconValue and propValue.colorValue will now exist
+    const [propValue] = useState(props)
+
     return (
         <div className="button">
-            <FontAwesomeIcon icon={faHome} />
+            <FontAwesomeIcon 
+            className="buttonIcon"
+            icon={propValue.iconValue} 
+            style={{color: propValue.colorValue}}
+            />
         </div>
     )
 }

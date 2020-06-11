@@ -4,8 +4,11 @@
     background-color: white;
     border-radius: 50%;
     box-shadow: 1px 3px 3px 0px #888888;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-img {
-    color: red;
+.buttonIcon {
+    font-size: 40px;
 }

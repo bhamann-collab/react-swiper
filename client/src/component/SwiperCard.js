@@ -15,10 +15,10 @@ const SwiperCard = () => {
     return (
         <div className="swipeArea">
             <TinderCard className="singleCard" onSwipe={onSwipe} onCardLeftScreen={() => onCardLeftScreen('fooBar')} preventSwipe={['up', 'down']}>
-              <img class="imgRestaurant" src={exampleRestaurant} alt="Example Restaurant"/>
+              <img className="imgRestaurant" src={exampleRestaurant} alt="Example Restaurant"/>
               <div className="button-container">
-                <Button />
-                <Button />
+                <Button colorValue={`red`} iconValue={`times`}/>
+                <Button colorValue={`green`} iconValue={`check`}/>
               </div>
               <div className="container">
                 <p>Ruby Red Flamingo</p>
