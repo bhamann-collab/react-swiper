@@ -13,7 +13,7 @@ app.use(cors())
 app.use(express.static(path.join(__dirname, './client/public')))
 
 app.get('*', (req, res) => {
-    res.sendFile(path.resolve(__dirname, 'index.html'))
+    res.sendFile(path.resolve(__dirname, 'client', 'index.html'))
 })
 
 //Using the test route
