@@ -4,7 +4,7 @@ import './css/App.scss';
 import APITest from './component/APITest'
 import Timer from './component/Timer'
 import SwiperCard from './component/SwiperCard'
-import photoDb from './db/photoDb.js'
+import photoDb from './db/photoDB'
 
 console.log(photoDb)
 
