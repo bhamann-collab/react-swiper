@@ -1,7 +1,15 @@
 const express = require('express')
-const app = express()
-const port = 5000
+const path = require('path');
+const testAPIRouter = require("./routes/testAPI")
 
-app.get('/', (req, res) => res.send('Hello you absolute legends!'))
+const app = express()
+const port = process.env.PORT || 5000
+
+//Middleware
+app.use(express.urlencoded({ extended: false }))
+app.use(express.json())
+
+//Using the test route
+app.use(testAPIRouter)
 
 app.listen(port, () => console.log(`Example app listening on port ${port}!`))
